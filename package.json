@@ -1,0 +1,23 @@
+{
+  "name": "app-portfolio-core",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rm -rf config/ && rm -rf db/ && rm -rf module/",
+    "build": "babel src --out-dir ./"
+  },
+  "author": "Juan Crisóstomo",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-1": "^6.24.1"
+  },
+  "dependencies": {
+    "log4js": "^2.3.3",
+    "mongoose": "^4.11.7"
+  }
+}

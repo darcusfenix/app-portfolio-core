@@ -1,0 +1,44 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _mongoose = require("mongoose");
+
+var _mongoose2 = _interopRequireDefault(_mongoose);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Schema = _mongoose2.default.Schema; // @flow
+
+
+var schema = new Schema({
+    title: {
+        type: String,
+        required: true
+    },
+    titleUrl: {
+        type: String,
+        required: true
+    },
+    description: {
+        type: String,
+        required: true
+    },
+    published: {
+        type: Date,
+        default: Date.now,
+        required: true
+    },
+    imgMedium: {
+        type: String,
+        required: true
+    },
+    totalShared: {
+        type: Number,
+        required: true
+    }
+});
+
+exports.default = schema;
