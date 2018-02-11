@@ -1,5 +1,5 @@
 // @flow
-const CatalogValidation = {
+const PostValidation = {
     name: {
         notEmpty: true
     },
@@ -7,4 +7,4 @@ const CatalogValidation = {
         notEmpty: true
     }
 };
-export default CatalogValidation;
+export default PostValidation;

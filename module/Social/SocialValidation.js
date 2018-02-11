@@ -4,12 +4,15 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 // @flow
-var PostValidation = {
-    name: {
+var SocialValidation = {
+    type: {
         notEmpty: true
     },
-    type: {
+    className: {
+        notEmpty: true
+    },
+    url: {
         notEmpty: true
     }
 };
-exports.default = PostValidation;
+exports.default = SocialValidation;
